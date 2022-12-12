@@ -1,4 +1,14 @@
 @charset "UTF-8";
+/* Todas as demais midias */
+
+/* Typical Device Breakpoints
+-------------------------------
+Pequenas Telas até 600px;
+Celular:600px até 768px;
+Tablet:768px até 992px;
+Desktop:992px até 1200px;
+Grandes telas: acima de 1200px;
+*/
 *{
     padding: 0px;
     margin: 0px;
@@ -50,16 +60,17 @@ nav > a:hover{
     transition-duration: .9s;
 }
 main{
-    padding: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 main > div.bloco{
-    width: 312px;
-    height: 390px;
+    width: 50%;
+    min-height: 400px;
     background-color: rgba(255, 255, 255, 0.712);
-    display: inline-block;
-    float: left;
-    margin: 10px;
+    margin: 2px;
     border-radius: 10px;
 
 }
@@ -82,6 +93,24 @@ main > div > p.preco{
 }
 input{
     width: 150px;
-    margin-top: 20px;
+    padding: 10px;
     font-size: 1em;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+@media screen and (max-width: 1000px) {
+    main{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    main > div.bloco{
+        width: 49%;
+        min-height: 400px;
+        background-color: rgba(255, 255, 255, 0.712);
+        margin: 2px;
+        border-radius: 10px;
+        
 }
