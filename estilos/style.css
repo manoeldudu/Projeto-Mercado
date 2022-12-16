@@ -25,8 +25,7 @@ body{
 }
 header{
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
-    min-height: 150px;
-    padding-top: 40px;
+    
 }
 header > h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -60,25 +59,28 @@ nav > a:hover{
     transition-duration: .9s;
 }
 main{
-    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    
 
 }
-main > div.bloco{
-    width: 50%;
-    min-height: 400px;
-    background-color: rgba(255, 255, 255, 0.712);
-    margin: 2px;
+main > div{
+    flex: 1 1 200px;
+    background-color: white;
+    margin: 10px;
+    max-width: 250px;
+    height: 405px;
     border-radius: 10px;
+    
 
 }
 main > div > img#frutas{
     width: 100%;
     height: 200px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
+    
 }
 main > div > p{
     color: rgb(23, 21, 51);
@@ -99,9 +101,8 @@ input{
     border-radius: 10px;
 }
 footer{
-    height: 50px;
+    margin-top: 57px;
     background-color: #18182ee0;
-       
 }
 footer > p{
     color: white;
@@ -113,20 +114,21 @@ footer > p#psite{
     font-size: 1.1em;
     font-family: 'Courier New', Courier, monospace;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 918px) {
     main{
         height: 100%;
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 800px;
+        margin: 0 auto;
         align-items: center;
-        flex-wrap: wrap;
-    }
-    main > div.bloco{
-        width: 49%;
-        min-height: 400px;
-        background-color: rgba(255, 255, 255, 0.712);
-        margin: 2px;
-        border-radius: 10px;
         
+      
+    }
+    main > div{
+        height: 410px;      
+}
+footer{
+    margin-top: 2px;
 }
 }
