@@ -132,3 +132,19 @@ footer{
     margin-top: 2px;
 }
 }
+@media screen and (max-width: 768px) {
+    header > p{
+        width: 95vw;
+    }
+    main > div{
+        flex: 1 1 200px;
+        background-color: white;
+        margin: 10px;
+        max-width: 250px;
+        height: 500px;
+        border-radius: 10px;
+        
+    
+    }
+    
+}
